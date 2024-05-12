@@ -13,15 +13,18 @@
               submit
             </button>
           </div>
+          <div class="d-flex justify-content-center">
+            <img
+              class="p-2"
+              [src]="qrImage"
+              alt="QR Image"
+              [style.display]="qrImage == undefined ? 'none' : 'block'"
+              style="height: 200px; width: 200px;"
+            />
+          </div>
         </div>
 
-        <div>
-          <img
-            [src]="qrImage"
-            alt="QR Image"
-            [style.display]="qrImage == undefined ? 'none' : 'block'"
-          />
-        </div>
+       
       </div>
     </div>
   </div>
