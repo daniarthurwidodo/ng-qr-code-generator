@@ -1,13 +1,18 @@
-<div class="p-5">
+<div class="p-5 bg-light-subtle">
   <div class="container">
     <div class="row">
       <div class="col">
-        <h3>QR code generator</h3>
-        <div class="d-flex gap-4">
-          <input type="text" [(ngModel)]="input" />
-          <button class="btn btn-primary" (click)="submitGenerateQr()">
-            submit
-          </button>
+        <div
+          class="card shadow p-3"
+          style="height: 380px"
+        >
+          <h3 class="text-center">QR code generator</h3>
+          <div class="d-flex gap-4 justify-content-center">
+            <input type="text" [(ngModel)]="input" style="width: 280px;" placeholder="can input anything"/>
+            <button class="btn btn-primary" (click)="submitGenerateQr()">
+              submit
+            </button>
+          </div>
         </div>
 
         <div>
